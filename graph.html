@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos con ChartJs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="chart-container">
+                <h2 class="graph">Gráfico por Tipo de Grupo</h2>
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="chart-container">
+                <h2 class="graph">Gráfico por Género</h2>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+    </div>
+    <a href="/data" class="btn btn-primary">Volver</a>
+</div>
+
+<script type="application/json" id="labels1">{{ labels1|tojson }}</script>
+<script type="application/json" id="values1">{{ values1|tojson }}</script>
+<script type="application/json" id="labels2">{{ labels2|tojson }}</script>
+<script type="application/json" id="values2">{{ values2|tojson }}</script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
+{% endblock %}
