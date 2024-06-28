@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8EEFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px; /* Espacio adicional a la izquierda para la imagen */
+}
+
+.login-container {
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9659c5;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    color: black;
+    font-size: .8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(199, 114, 255);
+}
+
+.login-container input[type="email"]::placeholder,
+.login-container input[type="password"]::placeholder {
+    color: rgb(80, 80, 80);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.login-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9133cb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #8d49c2;
+}
+
+img.logo {
+    margin-right: 100px; /* Espacio adicional entre la imagen y el formulario */
+    width: 500px; /* Ancho deseado para la imagen */
+
+}
