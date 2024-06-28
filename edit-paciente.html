@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <div class="card mt-5">
+      <div class="card-header">
+        <h4 class="card-title text-center">Editar Datos del Paciente</h4>
+      </div>
+      <div class="card-body">
+        <form action="/update/{{ paciente.0 }}" method="POST">
+          <div class="form-group mb-3">
+            <label for="nombre_completo">Nombre Completo:</label>
+            <input type="text" id="nombre_completo" name="nombre_completo" value="{{ paciente.1 }}" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" value="{{ paciente.2 }}" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" value="{{ paciente.3 }}" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" value="{{ paciente.4 }}" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad" value="{{ paciente.5 }}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="genero">Género:</label>
+            <select class="form-control" id="genero" name="genero" required>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="O">Otro</option>
+            </select>
+        </div>
+          <div class="form-group mb-3">
+            <label for="comorbilidad">Comorbilidad:</label>
+            <input type="text" id="comorbilidad" name="comorbilidad" value="{{ paciente.7 }}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="tipo_grupo">Tipo de Dengue:</label>
+            <select class="form-control" id="tipo_grupo" name="tipo_grupo" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-block">Actualizar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
