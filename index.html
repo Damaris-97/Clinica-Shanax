@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container">
+    <h1 class="mb-4 text-center">Lista de Pacientes</h1>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    
+    <!-- Formulario de búsqueda -->
+    <form id="searchForm" method="GET" action="/data" class="mb-4">
+        <div class="input-group">
+            <input type="text" class="form-control" id="dni" name="dni" placeholder="Buscar por DNI">
+            <button type="submit" class="btn btn-custom">Buscar</button>
+        </div>
+    </form>
+
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="bg-light">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                        <th>Comorbilidad</th>
+                        <th>Grupo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for paciente in pacientes %}
+                    <tr>
+                        <td>{{ paciente.1 }}</td>
+                        <td>{{ paciente.2 }}</td>
+                        <td>{{ paciente.3 }}</td>
+                        <td>{{ paciente.4 }}</td>
+                        <td>{{ paciente.5 }}</td>
+                        <td>{{ paciente.6 }}</td>
+                        <td>{{ paciente.7 }}</td>
+                        <td>{{ paciente.8 }}</td>
+                        <td>
+                            <div>
+                                <a href="/edit/{{ paciente.0 }}" class="btn btn-secondary btn-sm">Editar</a>
+                                <a href="/delete/{{ paciente.0 }}" class="btn btn-lightblue btn-sm btn-delete"
+                                    onclick="return confirm('¿Estás seguro de que deseas eliminar este paciente?')">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
