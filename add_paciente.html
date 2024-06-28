@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Agregar Paciente{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mb-4">Agregar Nuevo Paciente</h1>
+
+            <!-- Mensaje de confirmación -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="alert alert-success" role="alert">
+                        <ul class="mb-0">
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <form action="{{ url_for('add_paciente') }}" method="POST">
+                <div class="form-group">
+                    <label for="nombre_completo">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" class="form-control" id="dni" name="dni" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <textarea class="form-control" id="direccion" name="direccion" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" class="form-control" id="edad" name="edad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select class="form-control" id="genero" name="genero" required>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="O">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comorbilidad">Comorbilidad:</label>
+                    <textarea class="form-control" id="comorbilidad" name="comorbilidad" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipo_grupo">Tipo de Dengue:</label>
+                    <select class="form-control" id="tipo_grupo" name="tipo_grupo" required>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+
+                <!-- Añadir la clase de margen aquí -->
+                <button type="submit" class="btn btn-primary mt-3">Agregar Paciente</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
