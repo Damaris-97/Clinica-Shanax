@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Shanax</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='inicio.css') }}">
+    <script type="text/javascript">
+        function redirectToCatalog() {
+            window.location.href = "/login";
+        }
+
+        function redirectToRegistro() {
+            window.location.href = "/login";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1><span class="pizzeria-shanax">Clínica Shanax</span></h1>
+        <div class="button-container">
+            <button class="button" onclick="redirectToRegistro()">Login</button>
+        </div>
+    </div>
+</body>
+</html>
