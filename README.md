@@ -1,11 +1,11 @@
-Clínica Shanax
+#Clínica Shanax
 Proyecto: Sistema de control de contagios de dengue
 Alumnas: Melisa Marchesi, Damaris Videla
 
-Descripción
+#Descripción
 Clínica Shanax es una aplicación web diseñada para registrar y gestionar los casos de contagio de dengue, ofreciendo una interfaz intuitiva para la administración de pacientes y el monitoreo de estadísticas a través de gráficos interactivos.
 
-Estructura del Proyecto
+#Estructura del Proyecto
 Backend: Flask (Python) para la gestión del servidor y conexión a MySQL.
 Frontend: HTML, CSS, JavaScript.
 Base de Datos: MySQL para el almacenamiento de información sobre pacientes y estadísticas.
@@ -30,7 +30,7 @@ Configura las variables de entorno en .env.
 Ejecuta la aplicación:
 python server.py
 
-Tecnologías
+#Tecnologías
 Flask (Python)
 MySQL
 HTML, CSS, JavaScript
