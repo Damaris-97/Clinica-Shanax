@@ -1,21 +1,46 @@
-# Clinica-Shanax
-Es una clinica que lleva el control de contagios de dengue 
-Nombre del proyecto: Clínica Shanax
-Alumnas: Melisa Marchesi, Damaris Videla
-1- Creamos una carpeta: "Clinica_salud"
-2- Creamos el Readme: Donde vamos escribiendo cada cambio.
-3- Creamos dentro de visual: la carpeta "static" y la carpeta "templates". Dentro de "static" creamos la carpeta "js"
-4- Afuera de las carpetas creamos 4 archivos y los configuramos:
-a- readme: Escribir cada paso o cambio del proyecto.
-b- server.py: -Importar el flask y otras funciones que usaremos.
--Iniciamos el server con el app = flask.
--Configuramos el MYSQL 
--Creamos la clase usuario para poder ingresar a la pagina
--Empezamos a crear nuestras rutas, en ciertas rutas tendran una conexiona a nuestra base de datos.
--Finalmente terminamos nuestro server con el if __name__ == '__main__'
-c- .env: Configurar las variables de entorno.
-d- gitignore: contiene el .env
-5- Creamos los archivos dentro de las carpetas:
-a- Dentro de la carpeta "static", creamos los archivos "index.css, login.css, style.css, inicio.css" y añadimos una imange.png, y dentro de la carpeta "js" añadimos el archivo "script.js"
-b- Dentro de la carpeta "templates" creamos los arhcivos "add_paciente-html, base.html, edit-paciente.html, graph.html,index.html, incio.html, login.html, paciente.html"
-6- Escribimos el código en cada archivo y finalmente los subimos al GitHub.
+# Clínica Shanax
+
+**Proyecto:** Sistema de control de contagios de dengue  
+**Alumnas:** Melisa Marchesi, Damaris Videla
+
+## Descripción
+
+Clínica Shanax es una aplicación web diseñada para registrar y gestionar los casos de contagio de dengue, ofreciendo una interfaz intuitiva para la administración de pacientes y el monitoreo de estadísticas a través de gráficos interactivos. 
+
+## Estructura del Proyecto
+
+- **Backend:** Flask (Python) para la gestión del servidor y conexión a MySQL.
+- **Frontend:** HTML, CSS, JavaScript.
+- **Base de Datos:** MySQL para el almacenamiento de información sobre pacientes y estadísticas.
+
+### Archivos Principales
+
+- `server.py`: Configuración de Flask y rutas de la aplicación.
+- `.env`: Variables de entorno para la configuración de MySQL.
+- **`static/`**: Archivos estáticos (CSS, JavaScript, imágenes).
+- **`templates/`**: Vistas HTML para la interfaz del usuario.
+
+## Funcionalidades Clave
+
+- **Gestión de Pacientes:** Registro, edición y eliminación de pacientes.
+- **Estadísticas:** Visualización de datos de contagios mediante gráficos.
+- **Autenticación de Usuarios:** Sistema de login seguro para acceso al sistema.
+
+## Instalación y Ejecución
+
+1. Clona el repositorio:  
+   `git clone https://github.com/usuario/clinica-shanax.git`
+
+2. Instala las dependencias:  
+   `pip install -r requirements.txt`
+
+3. Configura las variables de entorno en `.env`.
+
+4. Ejecuta la aplicación:  
+   `python server.py`
+
+## Tecnologías
+
+- **Flask** (Python)
+- **MySQL**
+- **HTML, CSS, JavaScript**
