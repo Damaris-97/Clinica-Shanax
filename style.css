@@ -1,18 +1,18 @@
 /* Estilos para el cuerpo de la página */
 body {
   background: #ffffff;
-  font-family: 'Noto Sans'; /* Fuente para todo el cuerpo */
+  font-family: 'Noto Sans';
   margin: 0;
   padding: 0;
 }
 
 /* Estilo del encabezado o navbar */
 .navbar {
-  border: 2px solid #F8EEFF; /* Color del borde */
-  border-radius: 10px; /* Bordes redondeados */
-  margin: 0; /* Elimina el margen alrededor del encabezado */
+  border: 2px solid #F8EEFF; 
+  border-radius: 10px; 
+  margin: 0; 
   padding: 0;
-  background-color: #F8EEFF; /* Fondo morado */
+  background-color: #F8EEFF;
 }
 
 .navbar-nav {
@@ -24,16 +24,16 @@ body {
 /* Estilos para los enlaces de los botones en el navbar */
 .nav-link {
   position: relative;
-  color: rgb(190, 55, 55); /* Color de texto normal */
+  color: rgb(190, 55, 55); 
   font-size: 18px;
-  text-decoration: none; /* Quitar subrayado */
+  text-decoration: none;
   padding: 10px 20px;
-  transition: color 0.3s ease-in-out; /* Animación para cambio de color */
+  transition: color 0.3s ease-in-out;
 }
 
 /* Efecto hover: cambio de color y línea debajo */
 .nav-link:hover {
-  color: #d48ee0; /* Color del texto al pasar el mouse */
+  color: #d48ee0; 
 }
 
 /* Efecto de la línea debajo del texto */
@@ -42,47 +42,47 @@ body {
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #d48ee0; /* Color de la línea */
+  background-color: #d48ee0;
   bottom: 0;
   left: 0;
-  transition: width 0.3s ease-in-out; /* Animación de la línea */
+  transition: width 0.3s ease-in-out; 
 }
 
 /* Al pasar el mouse, la línea se expande completamente */
 .nav-link:hover::after {
-  width: 100%; /* La línea se extiende completamente debajo del texto */
+  width: 100%;
 }
 .nav-link.active::after {
-  width: 100%; /* Mantener la línea del enlace activo completa */
-  background-color: #d48ee0; /* Color de la línea */
+  width: 100%; 
+  background-color: #d48ee0;
 }
 
 /* Estilos para el encabezado */
 footer {
-  background-color: #F8EEFF; /* Fondo del pie de página */
-  color: #8d6ca4; /* Color del texto */
-  padding: 15px 0; /* Aumenta el espaciado interior */
+  background-color: #F8EEFF; 
+  color: #8d6ca4; 
+  padding: 15px 0;
   text-align: center;
-  margin: 6; /* Eliminamos márgenes */
+  margin: 6; 
 }
 
 /* Estilos para el contenido principal */
 .container {
-  max-width: 1200px; /* Ancho máximo del contenido principal */
-  background-color: #ffffff; /* Fondo del contenido principal */
-  padding: 1px; /* Espaciado interior del contenido */
-  border-radius: 5px; /* Bordes redondeados */
-  margin-bottom: 6px; /* Agregar margen inferior */
+  max-width: 1200px;
+  background-color: #ffffff;
+  padding: 1px; 
+  border-radius: 5px; 
+  margin-bottom: 6px; 
 }
 
 /* Estilos para los botones */
 .btn {
-  border-radius: 20px; /* Bordes redondeados */
+  border-radius: 20px; 
 }
 
 /* Estilos para los formularios */
 .form-control {
-  border-radius: 20px; /* Bordes redondeados */
+  border-radius: 20px;
 }
 
 /* Estilos para los botones del formulario */
