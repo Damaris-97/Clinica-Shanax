@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Clínica Shanax</title>
-    <!-- BOOTSTRAP 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -51,15 +50,14 @@
     </div>
 </footer>
 
-<!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
         $.ajax({
-            url: '/check_session',  // Ruta que valida la sesión en el servidor
+            url: '/check_session', 
             type: 'GET',
             success: function (response) {
-                // Si la sesión no es válida, redireccionar al login
+              
                 if (response.status !== 'ok') {
                     window.location.href = '/login';
                 }
