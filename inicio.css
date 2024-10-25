@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Brookman Old Style';
-    src: url('ruta/a/BrookmanOldStyle-Regular.ttf') format('truetype'); /* Reemplaza 'ruta/a/' con la ubicación real del archivo de la fuente */
+    src: url('ruta/a/BrookmanOldStyle-Regular.ttf') format('truetype'); 
 }
 
 body {
     background-image: url('https://s0.smartresize.com/wallpaper/364/79/HD-wallpaper-digital-technologies-in-medicine-heart-rate-medicine-background-pulse-medicine-background-medicine-concepts.jpg');
     background-size: cover;
     background-position: center;
-    font-family: 'Brookman Old Style', Tahoma, Arial, sans-serif; /* Cambio de la fuente */
+    font-family: 'Brookman Old Style', Tahoma, Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,10 +18,10 @@ body {
 }
 h1 {
     text-align: center;
-    color: rgba(69, 4, 113, 0.938); /* Color del texto */
+    color: rgba(69, 4, 113, 0.938); 
 }
 .pizzeria-shanax {
-    font-size: 3em; /* Tamaño de la fuente solo para Pizzeria Shanax */
+    font-size: 3em; 
 }
 .button-container {
     display: flex;
@@ -29,7 +29,7 @@ h1 {
     margin-top: 20px;
 }
 .button {
-    margin: 0 10px; /* Espacio entre los botones */
+    margin: 0 10px; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
