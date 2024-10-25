@@ -1,18 +1,18 @@
 .table {
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
-    width: 100%; /* Ancho al 100% */
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
   }
   
-  /* Estilos para el texto dentro de la tabla */
+
   .table td,
   .table th {
-    font-family: 'Comic Sans MS', cursive; /* Cambiar la fuente a Comic Sans */
-    font-size: 16px; /* Tamaño de fuente */
-    color: #333; /* Color de texto */
+    font-family: 'Comic Sans MS', cursive; 
+    font-size: 16px; 
+    color: #333;
   }
-/* Estilos para los botones personalizados */
+
 .btn-custom {
     padding: 10px 20px;
     text-transform: uppercase;
