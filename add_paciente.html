@@ -8,7 +8,7 @@
         <div class="col-md-8 offset-md-2">
             <h1 class="mb-4">Agregar Nuevo Paciente</h1>
 
-            <!-- Mensaje de confirmación -->
+           
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     <div class="alert alert-success" role="alert">
@@ -70,7 +70,6 @@
                     </select>
                 </div>
 
-                <!-- Añadir la clase de margen aquí -->
                 <button type="submit" class="btn btn-primary mt-3">Agregar Paciente</button>
             </form>
         </div>
